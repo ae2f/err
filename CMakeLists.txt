@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-if(ae2f_err_cmake)
+if(NOT ae2f_err_cmake)
 set(ae2f_err_cmake TRUE)
 
 project(err)
