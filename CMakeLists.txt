@@ -1,4 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
+
+if(ae2f_err_cmake)
 project(err)
 enable_testing()
 
@@ -54,3 +56,4 @@ install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake
 )
+endif()
