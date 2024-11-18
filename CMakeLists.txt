@@ -11,14 +11,17 @@ add_subdirectory(mod/ae2f/Core)
 # Namespace Package
 include(GNUInstallDirs)
 
-link_libraries(Core)
-add_library(
-	${PROJECT_NAME}
-    ${ae2f_LIBPREFIX}
+if(NOT TARGET ${PROJECT_NAME})
+    link_libraries(Core)
+    add_library(
+        ${PROJECT_NAME}
+        ${ae2f_LIBPREFIX}
 
-    "include/ae2f/err.h"
-    "src/err.c"
-)
+        "include/ae2f/err.h"
+        "src/err.c"
+    )
+endif()
+
 
 include_directories(include)
 
