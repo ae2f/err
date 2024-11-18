@@ -1,27 +1,23 @@
 cmake_minimum_required(VERSION 3.20)
 
-if(NOT ae2f_err_cmake)
-set(ae2f_err_cmake TRUE)
-
 project(err)
 enable_testing()
+if(NOT TARGET ${PROJECT_NAME})
 
 add_subdirectory(mod/ae2f/Core)
 
 # Namespace Package
 include(GNUInstallDirs)
 
-if(NOT TARGET ${PROJECT_NAME})
-    link_libraries(Core)
-    add_library(
-        ${PROJECT_NAME}
-        ${ae2f_LIBPREFIX}
 
-        "include/ae2f/err.h"
-        "src/err.c"
-    )
-endif()
+link_libraries(Core)
+add_library(
+    ${PROJECT_NAME}
+    ${ae2f_LIBPREFIX}
 
+    "include/ae2f/err.h"
+    "src/err.c"
+)
 
 include_directories(include)
 
@@ -61,4 +57,5 @@ install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake
 )
+
 endif()
