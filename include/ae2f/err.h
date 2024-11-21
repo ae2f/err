@@ -1,6 +1,6 @@
-#if !defined(ae2f_errGlobal)
+#if !defined(ae2f_errGlobal_h)
 // Those numbers with [ae2f_err_t] will be the state.
-#define ae2f_errGlobal
+#define ae2f_errGlobal_h
 
 #include <stdint.h>
 #include <ae2f/errGlob.h>
