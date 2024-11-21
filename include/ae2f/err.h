@@ -11,6 +11,6 @@
 /// # For C++ Deconstructors
 /// 
 /// When the end of the lifecycle for C++ objects builtins, the error code will stored here.
-ae2f_extern ae2f_SHAREDCALL ae2f_err_t ae2f_errGlob_Last;
+ae2f_extern ae2f_SHAREDCALL ae2f_err_t ae2f_errLast;
 
 #endif
