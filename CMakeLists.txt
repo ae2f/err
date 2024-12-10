@@ -4,7 +4,7 @@ project(err VERSION 2.7.3 LANGUAGES C CXX)
 enable_testing()
 add_subdirectory(mod/ae2f/Core)
 
-set(ae2f_LIBPREFIX "Flag: Something went wrong" CACHE STRING "STATIC")
+set(ae2f_LIBPREFIX "Flag: Something went wrong" CACHE STRING "")
 
 if(NOT TARGET ${PROJECT_NAME})
     ae2f_CoreLibProjTent(
