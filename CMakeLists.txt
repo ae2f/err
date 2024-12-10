@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(err VERSION 3.7.3 LANGUAGES C CXX)
+project(err VERSION 3.7.4 LANGUAGES C CXX)
 enable_testing()
 add_subdirectory(mod/ae2f/Core)
 
