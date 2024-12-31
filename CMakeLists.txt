@@ -1,13 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
-
 project(err VERSION 3.7.4 LANGUAGES C CXX)
 enable_testing()
-add_subdirectory(mod/ae2f/Core)
-
-
-set(ae2f_LIBPREFIX "Flag: Something went wrong" CACHE STRING "")
+include(cmake/Core.cmake)
 
 if(NOT TARGET ${PROJECT_NAME})
+    ae2f_CoreLibFetch(ae2f Core Rel-v6.13.7)
+
     ae2f_CoreLibTent(
         ${PROJECT_NAME} ${ae2f_LIBPREFIX} include ae2f
         "include/ae2f/err.h"
