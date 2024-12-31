@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(err VERSION 3.8.4 LANGUAGES C CXX)
+project(err VERSION 3.9.4 LANGUAGES C CXX)
 enable_testing()
 include(cmake/Core.cmake)
 
