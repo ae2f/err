@@ -1,5 +1,5 @@
 # ae2f::err
-- Rel-v3.9.5
+- Rel-v3.9.6
 
 > Global Errors definitions &amp; global error for ae2f.
 
