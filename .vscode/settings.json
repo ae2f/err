@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "err.h": "c",
-        "errglob.h": "c",
-        "call.h": "c"
-    }
-}
