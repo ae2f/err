@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.20)
-project(err VERSION 3.9.6 LANGUAGES C CXX)
+project(err VERSION 3.9.7 LANGUAGES C CXX)
 enable_testing()
 include(cmake/Core.cmake)
 
 if(NOT TARGET ${PROJECT_NAME})
-    ae2f_CoreLibFetch(ae2f Core Rel-v6.13.7)
+    ae2f_CoreLibFetch(ae2f Core Rel-v6.14.11)
 
     ae2f_CoreLibTent(
         ${PROJECT_NAME} ${ae2f_LIBPREFIX} include ae2f
